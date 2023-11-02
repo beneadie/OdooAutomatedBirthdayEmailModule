@@ -10,7 +10,7 @@ services:
     volumes:
       - data:/var/lib/odoo
       - ./config:/etc/odoo
-      - ./addons:/mnt/addons
+      - ./addons:/mnt/extra-addons
   psql:
     image: postgres:13
     env_file: myenvfile.env
