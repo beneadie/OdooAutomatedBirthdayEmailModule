@@ -1,0 +1,15 @@
+<odoo>
+    <data noupdate="1">
+        <record id="bdayemail" model="mail.template">
+            <field name="name">Birthday Greeting</field>
+            <field name="email_from">${object.email_from or ''}</field>
+            <field name="subject">Happy Birthday, ${object.name}!</field>
+            <field name="email_to">${object.email_to or ''}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html"><![CDATA[
+                <p>Dear ${object.name},</p>
+                <p>Happy Birthday!We hope you have a great day but also remember that your birthday is not an excuse to let your working standards drop and always remember that the company comes first.</p>
+            ]]></field>
+        </record>
+    </data>
+</odoo>

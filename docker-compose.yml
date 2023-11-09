@@ -6,7 +6,7 @@ services:
     depends_on:
       - psql
     ports:
-      - "8069:8069" #port mapping(custom-port:8069)
+      - "8069:8069"
     volumes:
       - data:/var/lib/odoo
       - ./config:/etc/odoo
@@ -19,3 +19,4 @@ services:
 volumes:
   data:
   db:
+
